@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.brindersaini.brinderjitpiyush_comp304lab4_ex1.WelcomeActivity">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.7"
+            android:background="@drawable/doctorbackground"
+            android:elevation="0dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:alpha="1"
+            android:elevation="21dp"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/layout_margin_bottom"
+            android:paddingLeft="@dimen/layout_margin_left"
+            android:paddingRight="@dimen/layout_margin_right"
+            android:paddingTop="@dimen/layout_margin_top"
+            tools:layout_width="match_parent">
+
+            <TextView
+                android:id="@+id/TxtWelcome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Welcome to patient information management system."
+                android:textAllCaps="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textColor="@android:color/background_dark" />
+
+            <TextView
+                android:id="@+id/TxtContinue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/TxtWelcome"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:hint="@string/login_type"
+                android:text="Please login to continue"
+                android:textColor="@android:color/background_dark"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/roundedcorner_layout"
+                android:orientation="vertical">
+
+                <Spinner
+                    android:id="@+id/TypeDropDown"
+                    style="@style/Widget.AppCompat.Spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/loginType"
+                    android:paddingBottom="10px"
+                    android:paddingTop="15px" />
+
+                <EditText
+                    android:id="@+id/editUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/login_Name"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/editPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/login_Password"
+                    android:inputType="textPassword" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnLogin"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:onClick="onLoginClick"
+                android:text="@string/loginBtn" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+</RelativeLayout>

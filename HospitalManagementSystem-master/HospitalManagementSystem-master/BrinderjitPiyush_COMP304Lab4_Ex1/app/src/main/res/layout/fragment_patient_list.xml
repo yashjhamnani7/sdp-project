@@ -1,0 +1,54 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.brindersaini.brinderjitpiyush_comp304lab4_ex1.PatientListFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:id="@+id/outerMostLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:paddingBottom="10dp"
+                android:text="Following is the list of patients.Please click  bottom right buttom to add new patient"
+                android:textColor="@android:color/background_dark"
+                android:textSize="14sp" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="360dp"
+                android:background="@drawable/listviewborder">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ListView
+                        android:id="@+id/PatientInfoListView"
+                        android:layout_width="match_parent"
+                        android:layout_height="351dp"
+                        android:layout_alignParentTop="true" />
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>
