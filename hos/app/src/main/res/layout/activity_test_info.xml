@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    tools:context="com.example.brindersaini.brinderjitpiyush_comp304lab4_ex1.TestInfoActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.6"
+            android:background="@drawable/doctorbackground"
+            android:elevation="0dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/layout_margin_bottom"
+            android:paddingLeft="@dimen/layout_margin_left"
+            android:paddingRight="@dimen/layout_margin_right"
+            android:paddingTop="@dimen/layout_margin_top">
+
+            <TextView
+                android:id="@+id/textView"
+                style="@style/Base.TextAppearance.AppCompat.Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Detailed test information" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/tablecellshape"
+                        android:text="Patient:         "
+                        android:textColor="@android:color/background_dark" />
+
+                    <TextView
+                        android:id="@+id/patientNameTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/tablecellshape"
+                        android:text="TextView"
+                        android:textColor="@android:color/background_dark" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/tablecellshape"
+                        android:text="Nurse:"
+                        android:textColor="@android:color/background_dark" />
+
+                    <TextView
+                        android:id="@+id/nurseNameTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/tablecellshape"
+                        android:text="TextView"
+                        android:textColor="@android:color/background_dark" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/tablecellshape"
+                        android:text="BPL:"
+                        android:textColor="@android:color/background_dark" />
+
+                    <TextView
+                        android:id="@+id/bplTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/tablecellshape"
+                        android:text="TextView"
+                        android:textColor="@android:color/background_dark" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/tablecellshape"
+                        android:text="BPH:"
+                        android:textColor="@android:color/background_dark" />
+
+                    <TextView
+                        android:id="@+id/bphTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/tablecellshape"
+                        android:text="TextView"
+                        android:textColor="@android:color/background_dark" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/tablecellshape"
+                        android:text="LDLCholesterol:"
+                        android:textColor="@android:color/background_dark" />
+
+                    <TextView
+                        android:id="@+id/LDLCholesterolTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/tablecellshape"
+                        android:text="TextView"
+                        android:textColor="@android:color/background_dark" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/tablecellshape"
+                        android:text="HDL Cholestrol:"
+                        android:textColor="@android:color/background_dark" />
+
+                    <TextView
+                        android:id="@+id/HDLCholesterolTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/tablecellshape"
+                        android:text="TextView"
+                        android:textColor="@android:color/background_dark" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/tablecellshape"
+                        android:text="MCH:"
+                        android:textColor="@android:color/background_dark" />
+
+                    <TextView
+                        android:id="@+id/MCHTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/tablecellshape"
+                        android:text="TextView"
+                        android:textColor="@android:color/background_dark" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/tablecellshape"
+                        android:text="ESR:"
+                        android:textColor="@android:color/background_dark" />
+
+                    <TextView
+                        android:id="@+id/ESRTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/tablecellshape"
+                        android:text="TextView"
+                        android:textColor="@android:color/background_dark" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/tablecellshape"
+                        android:text="PlateletCount:"
+                        android:textColor="@android:color/background_dark" />
+
+                    <TextView
+                        android:id="@+id/PlateletCountTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/tablecellshape"
+                        android:text="TextView"
+                        android:textColor="@android:color/background_dark" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/tablecellshape"
+                        android:text="Temperature:"
+                        android:textColor="@android:color/background_dark" />
+
+                    <TextView
+                        android:id="@+id/temperatureTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/tablecellshape"
+                        android:text="TextView"
+                        android:textColor="@android:color/background_dark" />
+                </TableRow>
+            </TableLayout>
+
+            <Button
+                android:id="@+id/EditTestBtn"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:onClick="onEditClick"
+                android:text="Edit Test" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>
+
