@@ -1,4 +1,4 @@
-package brinderjitPiyush.DatabaseHandler;
+package hospitaldb.DatabaseHandler;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -11,10 +11,10 @@ import android.util.Log;
 import java.util.ArrayList;
 import java.util.List;
 
-import brinderjit.Piyush.dto.Doctor;
-import brinderjit.Piyush.dto.Nurse;
-import brinderjit.Piyush.dto.Patient;
-import brinderjit.Piyush.dto.Test;
+import hospital.object.dto.Doctor;
+import hospital.object.dto.Nurse;
+import hospital.object.dto.Patient;
+import hospital.object.dto.Test;
 
 
 public class DatabaseHandler extends SQLiteOpenHelper {

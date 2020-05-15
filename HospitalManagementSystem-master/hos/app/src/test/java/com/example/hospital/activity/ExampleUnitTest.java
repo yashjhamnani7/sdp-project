@@ -1,4 +1,4 @@
-package com.example.brindersaini.brinderjitpiyush_comp304lab4_ex1;
+package com.example.hospital.activity;
 
 import org.junit.Test;
 

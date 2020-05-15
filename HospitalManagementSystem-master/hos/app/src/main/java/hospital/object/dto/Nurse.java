@@ -1,4 +1,4 @@
-package brinderjit.Piyush.dto;
+package hospital.object.dto;
 
 
 public class Nurse {

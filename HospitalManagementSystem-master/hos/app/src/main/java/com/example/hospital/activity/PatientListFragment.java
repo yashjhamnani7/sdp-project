@@ -1,14 +1,12 @@
-package com.example.brindersaini.brinderjitpiyush_comp304lab4_ex1;
+package com.example.hospital.activity;
 
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.net.Uri;
 import android.os.Bundle;
 import android.app.Fragment;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.content.ContextCompat;
-import android.support.v4.util.Pair;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,9 +18,8 @@ import android.widget.RelativeLayout;
 import java.util.ArrayList;
 import java.util.List;
 
-import brinderjit.Piyush.dto.Doctor;
-import brinderjit.Piyush.dto.Patient;
-import brinderjitPiyush.DatabaseHandler.DatabaseHandler;
+import hospital.object.dto.Patient;
+import hospitaldb.DatabaseHandler.DatabaseHandler;
 
 public class PatientListFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match

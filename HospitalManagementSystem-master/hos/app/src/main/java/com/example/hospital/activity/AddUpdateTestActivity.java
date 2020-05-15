@@ -1,4 +1,4 @@
-package com.example.brindersaini.brinderjitpiyush_comp304lab4_ex1;
+package com.example.hospital.activity;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -15,13 +15,10 @@ import android.widget.Toast;
 
 import java.util.List;
 
-import brinderjit.Piyush.dto.Doctor;
-import brinderjit.Piyush.dto.Nurse;
-import brinderjit.Piyush.dto.Patient;
-import brinderjit.Piyush.dto.Test;
-import brinderjitPiyush.DatabaseHandler.DatabaseHandler;
-
-import static com.example.brindersaini.brinderjitpiyush_comp304lab4_ex1.R.id.firstNameEdt;
+import hospital.object.dto.Nurse;
+import hospital.object.dto.Patient;
+import hospital.object.dto.Test;
+import hospitaldb.DatabaseHandler.DatabaseHandler;
 
 public class AddUpdateTestActivity extends AppCompatActivity {
 

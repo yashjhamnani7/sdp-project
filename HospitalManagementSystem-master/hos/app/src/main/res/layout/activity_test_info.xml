@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/background_light"
-    tools:context="com.example.brindersaini.brinderjitpiyush_comp304lab4_ex1.TestInfoActivity">
+    tools:context="com.example.hospital.activity.TestInfoActivity">
 
     <FrameLayout
         android:layout_width="match_parent"

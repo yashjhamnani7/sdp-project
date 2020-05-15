@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.brindersaini.brinderjitpiyush_comp304lab4_ex1">
+    package="com.example.hospital.activity">
 
     <application
         android:allowBackup="true"
@@ -11,24 +11,24 @@
         android:theme="@style/AppTheme">
 
 
-        <activity android:name=".WelcomeActivity">
+        <activity android:name="com.example.hospital.activity.WelcomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".PatientInfoActivity" />
+        <activity android:name="com.example.hospital.activity.PatientInfoActivity" />
         <activity
-            android:name=".AddUpdatePatientActivity"
-            android:parentActivityName=".PatientInfoActivity" />
+            android:name="com.example.hospital.activity.AddUpdatePatientActivity"
+            android:parentActivityName="com.example.hospital.activity.PatientInfoActivity" />
         <activity
-            android:name=".TestInfoActivity"
+            android:name="com.example.hospital.activity.TestInfoActivity"
             android:label="@string/title_activity_test_info"
-            android:parentActivityName=".PatientInfoActivity" />
+            android:parentActivityName="com.example.hospital.activity.PatientInfoActivity" />
         <activity
-            android:name=".AddUpdateTestActivity"
-            android:parentActivityName=".PatientInfoActivity" />
+            android:name="com.example.hospital.activity.AddUpdateTestActivity"
+            android:parentActivityName="com.example.hospital.activity.PatientInfoActivity" />
     </application>
 
 </manifest>

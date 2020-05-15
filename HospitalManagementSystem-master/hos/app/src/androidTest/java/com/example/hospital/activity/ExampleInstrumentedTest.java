@@ -1,4 +1,4 @@
-package com.example.brindersaini.brinderjitpiyush_comp304lab4_ex1;
+package com.example.hospital.activity;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

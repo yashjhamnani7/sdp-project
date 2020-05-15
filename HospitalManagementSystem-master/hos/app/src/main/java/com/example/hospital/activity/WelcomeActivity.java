@@ -1,24 +1,18 @@
-package com.example.brindersaini.brinderjitpiyush_comp304lab4_ex1;
+package com.example.hospital.activity;
 
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
-import android.widget.Toolbar;
 
-import java.io.FileNotFoundException;
-
-import brinderjit.Piyush.dto.Doctor;
-import brinderjit.Piyush.dto.Nurse;
-import brinderjit.Piyush.dto.Patient;
-import brinderjit.Piyush.dto.Test;
-import brinderjitPiyush.DatabaseHandler.DatabaseHandler;
+import hospital.object.dto.Doctor;
+import hospital.object.dto.Nurse;
+import hospitaldb.DatabaseHandler.DatabaseHandler;
 
 public class WelcomeActivity extends AppCompatActivity {
     DatabaseHandler db;

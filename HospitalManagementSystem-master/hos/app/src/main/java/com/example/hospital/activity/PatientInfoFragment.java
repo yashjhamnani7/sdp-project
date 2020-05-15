@@ -1,34 +1,26 @@
-package com.example.brindersaini.brinderjitpiyush_comp304lab4_ex1;
+package com.example.hospital.activity;
 
 import android.content.Context;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.app.Fragment;
 import android.support.design.widget.FloatingActionButton;
-import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ListAdapter;
 import android.widget.ListView;
-import android.widget.RelativeLayout;
-import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import java.util.ArrayList;
 import java.util.List;
 
-import brinderjit.Piyush.dto.Doctor;
-import brinderjit.Piyush.dto.Nurse;
-import brinderjit.Piyush.dto.Patient;
-import brinderjit.Piyush.dto.Test;
-import brinderjitPiyush.DatabaseHandler.DatabaseHandler;
+import hospital.object.dto.Doctor;
+import hospital.object.dto.Patient;
+import hospital.object.dto.Test;
+import hospitaldb.DatabaseHandler.DatabaseHandler;
 
 public class PatientInfoFragment extends Fragment {
 

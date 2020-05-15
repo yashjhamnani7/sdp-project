@@ -1,21 +1,18 @@
-package com.example.brindersaini.brinderjitpiyush_comp304lab4_ex1;
+package com.example.hospital.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
-import brinderjit.Piyush.dto.Nurse;
-import brinderjit.Piyush.dto.Patient;
-import brinderjit.Piyush.dto.Test;
-import brinderjitPiyush.DatabaseHandler.DatabaseHandler;
+import hospital.object.dto.Nurse;
+import hospital.object.dto.Patient;
+import hospital.object.dto.Test;
+import hospitaldb.DatabaseHandler.DatabaseHandler;
 
 public class TestInfoActivity extends AppCompatActivity {
 private  Test test;
