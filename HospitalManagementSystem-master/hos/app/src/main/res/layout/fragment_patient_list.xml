@@ -26,7 +26,7 @@
                 android:layout_marginLeft="2dp"
                 android:paddingBottom="10dp"
                 android:text="Following is the list of patients.Please click  bottom right buttom to add new patient"
-                android:textColor="@android:color/background_dark"
+                android:textColor="#E91E63"
                 android:textSize="14sp" />
 
             <ScrollView

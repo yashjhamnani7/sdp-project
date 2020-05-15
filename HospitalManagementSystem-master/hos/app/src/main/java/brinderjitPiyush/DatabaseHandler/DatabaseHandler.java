@@ -16,9 +16,6 @@ import brinderjit.Piyush.dto.Nurse;
 import brinderjit.Piyush.dto.Patient;
 import brinderjit.Piyush.dto.Test;
 
-/**
- * Created by Brinder Saini on 01/11/2017.
- */
 
 public class DatabaseHandler extends SQLiteOpenHelper {
     private static final String DATABASE_NAME = "HOSPITALDB";

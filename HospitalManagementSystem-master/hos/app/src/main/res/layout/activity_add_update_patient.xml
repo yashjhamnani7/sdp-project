@@ -13,7 +13,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:alpha="0.6"
-            android:background="@drawable/doctorbackground"
+            android:background="@drawable/doc2"
             android:elevation="0dp" />
 
         <LinearLayout
@@ -33,6 +33,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingBottom="10dp"
+                android:textColor="#E91E63"
                 android:text="Please enter patient information" />
 
             <EditText

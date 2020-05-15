@@ -48,7 +48,7 @@ public class PatientInfoActivity extends AppCompatActivity implements PatientLis
                 "com.example.brindersaini", Context.MODE_PRIVATE);
         String Username = prefs.getString("UserName","UserName");
         String type = prefs.getString("Type","Type");
-        welcomeTxt.setText("Welcome "+Username+" to Patient information management system");
+        welcomeTxt.setText("Hello "+Username+"!");
         final Intent intent=getIntent();
         final Intent intent1 = new Intent(this, AddUpdatePatientActivity.class);
        intent1.putExtra("purpose","add");
@@ -56,19 +56,21 @@ public class PatientInfoActivity extends AppCompatActivity implements PatientLis
         FragmentManager fm = getFragmentManager();
         FragmentTransaction ft = fm.beginTransaction();
         ft.add(R.id.patientInfoLayout, new PatientListFragment());
+
         ft.commit();
-      /*  if(type.equals("Nurse"))
+      if(type.equals("Nurse"))
         {
             FloatingActionButton addPatientBtn=new FloatingActionButton(this);
+
+
             RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
-            params.addRule(RelativeLayout.ALIGN_PARENT_RIGHT, RelativeLayout.TRUE);
+            params.addRule(RelativeLayout.ALIGN_PARENT_LEFT, RelativeLayout.TRUE);
             params.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM, RelativeLayout.TRUE);
 
-            addPatientBtn.setImageDrawable(ContextCompat.getDrawable(this,R.drawable.ic_person_add_white_24dp));
+            addPatientBtn.setImageDrawable(ContextCompat.getDrawable(this,R.drawable.ic_delete_forever_black_24dp));
            // Button addPatientBtn=new Button(this);
             //addPatientBtn.setText("Add new Pateint");
-            final RelativeLayout btnLayout=(RelativeLayout) findViewById(R.id.outerMostLayouts);
-           btnLayout.addView(addPatientBtn);
+
             addPatientBtn.setLayoutParams(params);
             addPatientBtn.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -78,7 +80,7 @@ public class PatientInfoActivity extends AppCompatActivity implements PatientLis
                 }
             });
         }
-*/
+
 
     }
     public void onPatientListClick(View v)

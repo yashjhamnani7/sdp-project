@@ -4,6 +4,7 @@
     <string name="login_Password">Password</string>
     <string name="loginBtn">Login</string>
     <string name="login_type">Select login Type</string>
+    <string name="hospital"></string>
     <string-array name="loginType">
         <item>Select Login type</item>
         <item>Doctor</item>

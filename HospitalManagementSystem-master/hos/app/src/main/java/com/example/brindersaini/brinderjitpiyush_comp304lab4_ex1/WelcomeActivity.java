@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
+import android.widget.Toolbar;
 
 import java.io.FileNotFoundException;
 
@@ -31,11 +32,26 @@ public WelcomeActivity()
         setContentView(R.layout.activity_welcome);
 
        try {
-          Doctor doctor = new Doctor("brinderjit1", "Brinderjit", "Singh", "Neurology", "waheguru");
-          db.deleteDoctor(doctor);
-            db.addDoctor(doctor);
-          Nurse nurse = new Nurse("piyush1", "Piyush", "Sharma", "Neurology", "waheguru");
+         Doctor doctor = new Doctor("Dr.Sonali", "Sonali", "Dixit", "Neurology", "dixitsonali");
+           // db.deleteDoctor(doctor);
+           db.addDoctor(doctor);
+           Doctor doctor1 = new Doctor("Dr.Yash", "Yash", "Jhamnani", "Microbiology", "yash");
+           // db.deleteDoctor(doctor);
+           db.addDoctor(doctor1);
+           Doctor doctor2 = new Doctor("Dr.Sunayana", "Sunayana", "Sahoo", "Nephrology", "sunayana");
+           // db.deleteDoctor(doctor);
+           db.addDoctor(doctor2);
+           Doctor doctor3 = new Doctor("Dr.Anand", "Anand", "Kumar", "Nephrology", "anand");
+           // db.deleteDoctor(doctor);
+           db.addDoctor(doctor3);
+           Nurse nurse = new Nurse("Sonali", "Sonali", "Dixit", "Neurology", "dixitsonali");
            db.addNurse(nurse);
+           Nurse nurse1 = new Nurse("Sunayana", "Sunayana", "Sahoo", "Microbiology", "sunayana");
+           db.addNurse(nurse1);
+           Nurse nurse2 = new Nurse("Pragati", "Pragti", "Kumari", "Nephrology", "pragati");
+           db.addNurse(nurse2);
+           Nurse nurse3 = new Nurse("Kajal", "Kajal", "Kumari", "Nephrology", "kajal");
+           db.addNurse(nurse3);
 
         }
         catch (Exception e)
@@ -122,4 +138,5 @@ public WelcomeActivity()
        // Toast toast2 = Toast.makeText(getApplicationContext(),doctor.getFirstName(),Toast.LENGTH_SHORT);
        // toast2.show();
     }
+
 }

@@ -1,8 +1,5 @@
 package brinderjit.Piyush.dto;
 
-/**
- * Created by Brinder Saini on 01/11/2017.
- */
 
 public class Nurse {
     //private variables
@@ -54,12 +51,12 @@ public class Nurse {
     public void setLastname(String name){
         this.lastname = name;
     }
-    // getting phone number
+
     public String getDepartment(){
         return this.department;
     }
 
-    // setting phone number
+
     public void setDepartment(String department){
         this.department = department;
     }

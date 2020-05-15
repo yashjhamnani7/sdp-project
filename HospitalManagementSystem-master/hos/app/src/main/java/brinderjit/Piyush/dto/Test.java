@@ -1,8 +1,6 @@
 package brinderjit.Piyush.dto;
 
-/**
- * Created by Brinder Saini on 01/11/2017.
- */
+
 
 public class Test {
     private int testId;

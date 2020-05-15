@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    tools:context="com.example.brindersaini.brinderjitpiyush_comp304lab4_ex1.PatientInfoFragment">
+    tools:context="com.example.hospital.activity.PatientInfoFragment">
 
 
     <android.support.design.widget.FloatingActionButton
